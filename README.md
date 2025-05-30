@@ -21,7 +21,7 @@ mim install mmengine
 
 pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html
 
-因为在上一步的安装中，我们安装的是 torch==2.1.0版本，这里一步选择下拉框中的选择 cuda11.8 ，torch 2.1.x 以及后面 mmcv2.1.0，这几个一定保持对应，否则后面再安装完成后测试的时候，会因为版本不对应出错。
+因为在上一步的安装中，我们安装的是 torch==2.1.0版本，这里一步选择 cuda11.8 ，torch 2.1.x 以及后面 mmcv2.1.0，这几个一定保持对应，否则后面再安装完成后测试的时候，会因为版本不对应出错。
 
 6.安装mmdet mim install mmdet
 
@@ -37,7 +37,7 @@ python tools/dataset_converters/pascal_voc.py D:\rhf\zhangli\mmdetection-main\da
 
 训练Mask R-CNN模型：python tools/train.py configs/mask_rcnn/mask-rcnn_r101_fpn_2x_coco.py
 
-选择的是mask-rcnn_r101_fpn_2x_coco模型，注意引用的数据格式源文件，instancecocow.py文件夹里面要做适当的调整，更新类别
+选择的是mask-rcnn_r101_fpn_2x_coco模型，注意引用的数据格式源文件，instancecoco.py文件夹里面要做适当的调整，更新类别
 
 训练Sparse R-CNN模型 python tools/train.py configs/sparse_rcnn/sparse-rcnn_r50_fpn_ms-480-800-3x_coco.py
 
