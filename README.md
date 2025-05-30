@@ -27,6 +27,8 @@ pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2
 
 7.启动已经安装好的conda 环境 conda activate openmmlab
 
+--------------------------------------------------------
+
 下载VOC数据集，并把数据集转化为coco格式
 
 python tools/dataset_converters/pascal_voc.py D:\rhf\zhangli\mmdetection-main\data\VOCdevkit -o D:\rhf\zhangli\mmdetection-main\data\output --out-format coco
