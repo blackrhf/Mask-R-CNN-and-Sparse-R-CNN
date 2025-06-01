@@ -59,7 +59,21 @@ tensorboard --logdir=work_dirs/sparse-rcnn_r50_fpn_ms-480-800-3x_coco/20250529_1
 
 注意输入输出文件地址
 
+test.ipynb完成了在caltech-101数据集上进行微调的分类任务
 
+环境上的配置与sparse-r-cnn一致
+
+jupyter在调试时效果更易观察
+
+每个模块的部分通过markdown进行了功能上的说明
+
+微调性能上都得到了显著的提升，准确率从未进行微调的0.6124都提升至0.9以上
+
+同时用微调的方法保证了算力和运算时间的节省
+
+使用tensorboard进行损失图像的绘制和准确率随epoch增加而变化图像的绘制
+
+结果保存在log日志中
 
 
 
